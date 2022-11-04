@@ -1,0 +1,50 @@
+{
+  "snowflake_details": {
+  "user": "abc@domain.com",
+  "account": "account_name.us-east-1",
+  "role": "SNOWFLAKE_DW_DEVELOPER",
+  "authenticator": "externalbrowser"
+  },
+   "common_sqlqueries" : {
+    "warehouse": "use warehouse {warehouse_name}",
+    "database": "use database {database_name}",
+    "schema": "use schema {schema_name}",
+    "select": "select * from {table_name}",
+    "primary_key": "select column_name from information_schema.columns where table_name='{table_name}' and ORDINAL_POSITION = 1 and table_schema = '{schema_name}'",
+    "business_key": "select column_name from information_schema.columns where table_name='{table_name}' and IS_NULLABLE = 'NO' and table_schema = '{schema_name}' and column_name not like 'INSERT_%'",
+    "key_columns": "select column_name from information_schema.columns where table_name='{table_name}' and table_schema = '{schema_name}' and column_name not like 'INSERT_%' and (column_name like '%_KEY')"
+  },
+  "module1_details": {
+    "warehouse": "warehouse",
+    "source_database": "source_database",
+    "target_database": "target_database",
+    "source_schema": "source_schema",
+    "target_schema": "target_schema",
+    "process_date": "2022-06-13 00:00:00.000"
+  },
+  "module1_details_1": {
+    "warehouse": "warehouse",
+    "source_database": "source_database",
+    "target_database": "target_database",
+    "source_schema": "source_schema",
+    "target_schema": "target_schema",
+    "process_date": "2022-06-13 00:00:00.000"
+  },
+  "module1_details": {
+    "warehouse": "warehouse",
+    "source_database": "source_database",
+    "target_database": "target_database",
+    "source_schema": "source_schema",
+    "target_schema": "target_schema",
+    "process_date": "2022-06-13 00:00:00.000"
+  },
+  "module3_module1_details": {
+    "warehouse": "warehouse",
+    "source_database": "source_database",
+    "target_database": "target_database",
+    "source_schema": "source_schema",
+    "target_schema": "target_schema",
+    "process_date": "2022-06-13 00:00:00.000"
+  }
+}
+
